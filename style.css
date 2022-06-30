@@ -5,6 +5,7 @@
 
 body{
     font-family: "Poppins";
+    overflow-x: hidden;
 }
 
 nav{
@@ -13,13 +14,14 @@ nav{
     position: fixed;
     z-index: 1; 
     font-family: "Poppins";
+    
 }
 
 .wrapper{
     width: 100%;
-    margin-left: 10%;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    padding-left: 10%;
+    padding: 20px 10%;
+    margin:  20px 50px;
 }
 
 .logo{
@@ -43,12 +45,14 @@ nav{
 }
 
 .menu ul{
-    margin-right: 200px;
+    padding-right: 50px;
+    padding-left: 0px;
 }
 .menu ul li{
     float: left;
     list-style-type: none;
     margin-top: 9px;
+    margin-right: 10px;
 }
 
 .menu ul li a{
@@ -56,7 +60,8 @@ nav{
     font-weight: bolder;
     text-decoration: none;
     color: #363e42;
-    padding: 20px 40px;
+    padding: 10px 40px;
+    
     
 }
 
@@ -66,14 +71,15 @@ nav{
 
 .menu ul li a:hover{
     color: #174d37;
-    text-decoration: underline;
-    border-radius: 6px; 
+    border-bottom: 2px solid;
 }
 
+/*===================== Home ==========================*/
 
 .layer{
     background-color: rgba(140, 147, 160, 0.75);
     backdrop-filter: blur(5px) saturate(300%);
+    box-shadow: inset 0px 0px 20px 0px white;
     width: 45%;
     height: 100%;
     color: white;
@@ -86,11 +92,23 @@ nav{
 }
 
 
+.layer .title{
+    width: 200%;
+    padding-top: 25%;
+    font-size: 110px; 
+    margin-left: 160px; 
+}
+
+.layer .title span{
+    display: block;
+    margin-left: 730px;
+    color: #363e42  ;
+}
 .layer .sub{
     display: none;
-    padding-top: 70%;
     text-align: center;
     font-weight: 700;
+    /* margin-top: 10%; */
 }
 
 .layer .sub span{
@@ -98,7 +116,7 @@ nav{
     font-weight: 100;
 }
 
-.description{ 
+.description{
     display: none;
     margin-left: 260px;
     padding: 20px 100px;
@@ -114,7 +132,7 @@ nav{
 /*===================== Destinasi ==========================*/
 
 #content{
-    transition: all .5s ease-in-out;    
+    transition: all .7s;    
     background-image: url("assets/image/anjungan.jpg");
     background-position: center;
     background-size: cover;
@@ -126,6 +144,7 @@ nav{
     padding-top: 380px;
     margin-left: 160px;
     color: white;
+    height: 230px;
 }
 
 #content .label h1{
@@ -166,10 +185,6 @@ nav{
 
 #content .image-option img:hover{
     box-shadow: -10px 10px 20px #161616;
-    height: 220px;
+    margin-bottom: 30px;
     transition: all .5s;
 }
-
-
-
-
