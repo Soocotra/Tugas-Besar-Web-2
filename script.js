@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $("#wrapper-about").css({'background-color': '#F2F1ED'});
+    $("#wrapper-about").animate({margin: '20px 0px'}, 0);
     $(".sub").fadeIn(900);
     $(".description").fadeIn(900);
     
@@ -39,7 +41,7 @@ $(document).ready(function () {
         foregroundColor("black");
     };img[3].onclick = ()=>{
         $(".wrapper").css({'background-color': '#F2F1ED'});
-        $(".wrapper").animate({margin: '20px 0px'});
+        $(".wrapper").animate({margin: '20px 0px'}, 0);
         bg.style.backgroundImage = "url('assets/image/Taman.jpg')";
         title.innerHTML = " Miniatur Arsipel Indonesia";
         explain.innerHTML = "Miniatur Arsipel Indonesia memperlihatkan secara nyata keindahan dan wujud bentang darat Indonesia berikut gunung, bukit, dan lembah dalam wujud mini. Tumbuh-tumbuhan dan tanaman bunga menghiasi tinggi rendahnya pulau-pulau mencerminkan keindahan alam Indonesia."
@@ -48,18 +50,15 @@ $(document).ready(function () {
     
 });
 
-$(document).ready(function () {
-    $("#wrapper-about").css({'background-color': '#F2F1ED'});
-    $("#wrapper-about").animate({margin: '20px 0px'});
-});
+
 
 $(document).ready(function () {
     $(window).scroll(function () { 
         console.log(window.scrollY);
-        if (window.scrollY > 100) {
-            $("#history-wrapper").animate({margin: '0px 0px'}, 300).css({'background-color': '#F2F1ED'});
+        if (window.scrollY > 50) {
+            $("#history-wrapper").animate({margin: '0px 0px'}, 0).css({'background-color': '#F2F1ED'});
         }else{
-            $("#history-wrapper").animate({margin: '30px 90px'}, 10).css("background-color", "transparent");
+            $("#history-wrapper").animate({margin: '30px 90px'}, 0).css("background-color", "transparent");
         }
     });
 });

@@ -22,6 +22,7 @@ nav{
     padding-left: 10%;
     padding: 20px 10%;
     margin:  20px 90px;
+    transition: all .5s ease;
 }
 
 .logo{
@@ -224,6 +225,7 @@ video{
     margin-top: -150px;
     margin-bottom: 100px;
     margin-left: 200px;
+    object-fit: cover;
 }
 
 .history-content .text{
@@ -318,7 +320,7 @@ video{
   }
 
   footer .address{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 60px;
     width: 300px;
   }
